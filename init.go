@@ -1,6 +1,6 @@
 package syncWx
 
-import "syncWx/controller"
+import "github.com/Carrotxyy/syncWx/controller"
 
 type Init struct {
 	Work controller.Work
