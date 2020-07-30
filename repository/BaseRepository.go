@@ -5,8 +5,8 @@ import (
 	"log"
 	"os"
 	"strings"
-	"syncWx/common/db"
-	"syncWx/models"
+	"github.com/Carrotxyy/syncWx/common/db"
+	"github.com/Carrotxyy/syncWx/models"
 )
 
 type BaseRepository struct {

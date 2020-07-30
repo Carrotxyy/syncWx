@@ -2,10 +2,10 @@ package controller
 
 import (
 	"fmt"
-	"syncWx/common/api"
-	"syncWx/common/setting"
-	"syncWx/models"
-	"syncWx/repository"
+	"github.com/Carrotxyy/syncWx/common/api"
+	"github.com/Carrotxyy/syncWx/common/setting"
+	"github.com/Carrotxyy/syncWx/models"
+	"github.com/Carrotxyy/syncWx/repository"
 )
 
 /**

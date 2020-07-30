@@ -6,7 +6,7 @@ import (
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 	"log"
 	"os"
-	"syncWx/common/setting"
+	"github.com/Carrotxyy/syncWx/common/setting"
 )
 
 type DB struct {
