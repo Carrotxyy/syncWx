@@ -1,4 +1,4 @@
-package main
+package syncWx
 
 import (
 	"fmt"
@@ -54,22 +54,22 @@ func (init *Init)RunWork(){
 	// 运行 下载访客
 	init.Work.VisitorLoad()
 }
-
-func main() {
-	config := GetConfig()
-	config.WxAddr = "http://xyz.szlimaiyun.cn"
-	config.DbType = "mysql"
-	config.DbUser = "root"
-	config.DbPassword = "123456"
-	config.DbIP = "127.0.0.1"
-	config.DbName = "gin-vue"
-	config.TablePrefix = "go_"
-
-	wxWork,err := Create(config)
-	if err != nil {
-		fmt.Println("创建微信同步任务错误！")
-		return
-	}
-
-	wxWork.RunWork()
-}
+//运行实例
+//func main() {
+//	config := GetConfig()
+//	config.WxAddr = "http://xyz.szlimaiyun.cn"
+//	config.DbType = "mysql"
+//	config.DbUser = "root"
+//	config.DbPassword = "123456"
+//	config.DbIP = "127.0.0.1"
+//	config.DbName = "gin-vue"
+//	config.TablePrefix = "go_"
+//
+//	wxWork,err := Create(config)
+//	if err != nil {
+//		fmt.Println("创建微信同步任务错误！")
+//		return
+//	}
+//
+//	wxWork.RunWork()
+//}
