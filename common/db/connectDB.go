@@ -14,10 +14,8 @@ type DB struct {
 }
 
 // 链接数据库
-func (d *DB) Connect() error {
+func (d *DB) Connect(config setting.Config) error {
 	// 获取配置
-	config := setting.LoadingConf()
-
 	dbType := config.DbType
 	dbName := config.DbName
 	user := config.DbUser

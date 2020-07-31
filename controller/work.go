@@ -14,16 +14,16 @@ import (
 
 
 type Work struct {
-	Repository *repository.BaseRepository
-	Config *setting.Config
+	Repository *repository.BaseRepository `inject:""`
+	Config *setting.Config `inject:""`
 }
 
-// 创建业务
-func CreateWork()Work{
-	r := repository.NewRepository()
-	config := setting.LoadingConf()
-	return Work{Repository: r,Config: config}
-}
+//// 创建业务
+//func CreateWork()Work{
+//	r := repository.NewRepository()
+//	config := setting.LoadingConf()
+//	return Work{Repository: r,Config: config}
+//}
 
 /**
 	恢复标志位

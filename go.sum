@@ -2,6 +2,10 @@ github.com/PuerkitoBio/goquery v1.5.1/go.mod h1:GsLWisAFVj4WgDibEWF4pvYnkVQBpKBK
 github.com/andybalholm/cascadia v1.1.0/go.mod h1:GsXiBklL0woXo1j/WYWtSYYC4ouU9PqHO0sqidkEA4Y=
 github.com/denisenkom/go-mssqldb v0.0.0-20191124224453-732737034ffd/go.mod h1:xbL0rPBG9cCiLr28tMa8zpbdarY27NDyej4t/EjAShU=
 github.com/erikstmartin/go-testdb v0.0.0-20160219214506-8d10e4a1bae5/go.mod h1:a2zkGnVExMxdzMo3M0Hi/3sEU+cWnZpSni0O6/Yb/P0=
+github.com/facebookgo/inject v0.0.0-20180706035515-f23751cae28b h1:V6c4/dSTNhSaNn4c5ulbakfv277qCvs7byFYv7P83iQ=
+github.com/facebookgo/inject v0.0.0-20180706035515-f23751cae28b/go.mod h1:oO8UHw+fDHjDsk4CTy/E96WDzFUYozAtBAaGNoVL0+c=
+github.com/facebookgo/structtag v0.0.0-20150214074306-217e25fb9691 h1:KnnwHN59Jxec0htA2pe/i0/WI9vxXLQifdhBrP3lqcQ=
+github.com/facebookgo/structtag v0.0.0-20150214074306-217e25fb9691/go.mod h1:sKLL1iua/0etWfo/nPCmyz+v2XDMXy+Ho53W7RAuZNY=
 github.com/go-sql-driver/mysql v1.5.0 h1:ozyZYNQW3x3HtqT1jira07DN2PArx2v7/mN66gGcHOs=
 github.com/go-sql-driver/mysql v1.5.0/go.mod h1:DCzpHaOWr8IXmIStZouvnhqoel9Qv2LBy8hT2VhHyBg=
 github.com/golang-sql/civil v0.0.0-20190719163853-cb61b32ac6fe/go.mod h1:8vg3r2VgvsThLBIFL93Qb5yWzgyZWhEmBwUJWevAkK0=

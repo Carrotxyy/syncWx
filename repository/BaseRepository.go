@@ -1,30 +1,27 @@
 package repository
 
 import (
-
-	"log"
-	"os"
-	"strings"
 	"github.com/Carrotxyy/syncWx/common/db"
 	"github.com/Carrotxyy/syncWx/models"
+	"strings"
 )
 
 type BaseRepository struct {
-	DB *db.DB
+	DB *db.DB `inject:""`
 }
 
 // 初始化
-func NewRepository()*BaseRepository{
-	db := db.DB{}
-	err := db.Connect()
-	if err != nil {
-		log.Panic("初始化数据库错误:",err)
-		os.Exit(1)
-	}
-	return &BaseRepository{
-		&db,
-	}
-}
+//func NewRepository()*BaseRepository{
+//	db := db.DB{}
+//	err := db.Connect()
+//	if err != nil {
+//		log.Panic("初始化数据库错误:",err)
+//		os.Exit(1)
+//	}
+//	return &BaseRepository{
+//		&db,
+//	}
+//}
 
 /**
 	根据条件，获取人员表数据
