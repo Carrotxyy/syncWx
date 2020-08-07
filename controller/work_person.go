@@ -20,6 +20,7 @@ func (w *Work)PersonUpload()error{
 
 	var persons []*models.Personinfo
 	// 查找修改过数据的业主,并且这些数据没有被同步到微信系统中
+	// 这里不需要处理业主是否是被删除，拥有权限。只需要将变动的数据上传即可，云端来处理，是该删除数据还是怎么样
 	where := models.Personinfo{
 		Per_WXMark: "0",
 	}

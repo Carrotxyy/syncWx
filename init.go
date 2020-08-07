@@ -1,4 +1,4 @@
-package syncWx
+package main
 
 import (
 	"fmt"
@@ -25,6 +25,7 @@ func Create(config setting.Config)(*Init,error) {
 
 	var init Init
 
+	// 依赖注入
 	var injector inject.Graph
 	if err := injector.Provide(
 		&inject.Object{Value: &init},
@@ -54,22 +55,32 @@ func (init *Init)RunWork(){
 	// 运行 下载访客
 	init.Work.VisitorLoad()
 }
-//运行实例
-//func main() {
-//	config := GetConfig()
-//	config.WxAddr = "http://xyz.szlimaiyun.cn"
-//	config.DbType = "mysql"
-//	config.DbUser = "root"
-//	config.DbPassword = "123456"
-//	config.DbIP = "127.0.0.1"
-//	config.DbName = "gin-vue"
-//	config.TablePrefix = "go_"
-//
-//	wxWork,err := Create(config)
-//	if err != nil {
-//		fmt.Println("创建微信同步任务错误！")
-//		return
-//	}
-//
-//	wxWork.RunWork()
+
+/**
+	以路由方式加载
+ */
+//func (inti *Init)HttpWork(router *gin.Engine){
+//	// 加载controller
 //}
+
+
+
+//运行实例
+func main() {
+	config := GetConfig()
+	config.WxAddr = "http://xyz.szlimaiyun.cn"
+	config.DbType = "mysql"
+	config.DbUser = "root"
+	config.DbPassword = "123456"
+	config.DbIP = "127.0.0.1"
+	config.DbName = "gin-vue"
+	config.TablePrefix = "go_"
+
+	wxWork,err := Create(config)
+	if err != nil {
+		fmt.Println("创建微信同步任务错误！")
+		return
+	}
+
+	wxWork.RunWork()
+}

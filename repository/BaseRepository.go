@@ -63,16 +63,16 @@ func (b *BaseRepository) Save(value interface{})error{
 	返回参数 (错误)
  */
 func (b *BaseRepository) BatchSave(value []*models.Visitor)error{
-	sql := "insert into `go_visitor` (`vis_name`,`vis_number`,`vis_uname`,`vis_unumber`,`vis_idtype`,`vis_idnum`,`vis_starttime`,`vis_endtime`,`vis_message`,`vis_isacc`,`vis_state`,`vis_filename`,`vis_perid`) values "
+	sql := "insert into `go_visitor` (`Vis_Name`,`Vis_Number`,`Vis_UName`,`Vis_UNumber`,`Vis_IDType`,`Vis_IDNum`,`Vis_StartTime`,`Vis_EndTime`,`Vis_Message`,`Vis_IsAcc`,`Vis_State`,`Vis_FileName`,`Vis_PerID`,`Vis_SenseMark`,`Vis_PeakMark`,`Vis_MegMark`) values "
 	// 实际参数
 	rels := []interface{}{}
 	// sql语句参数
-	rowSql := "(?,?,?,?,?,?,?,?,?,?,?,?,?)"
+	rowSql := "(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"
 	var insert []string
 	// 构建批量添加的sql
 	for _, e := range value {
 		insert = append(insert,rowSql)
-		rels = append(rels,e.Name, e.Number, e.UName ,e.UNumber,e.IdType,e.IdNum,e.StartTime,e.EndTime,e.Message,e.IsAcc,e.State,e.FileName,e.Per_ID)
+		rels = append(rels,e.Vis_Name, e.Vis_Number, e.Vis_UName ,e.Vis_UNumber,e.Vis_IDType,e.Vis_IDNum,e.Vis_StartTime,e.Vis_EndTime,e.Vis_Message,e.Vis_IsAcc,e.Vis_State,e.Vis_FileName,e.Vis_PerID,"1","1","1")
 
 	}
 	// 拼接sql

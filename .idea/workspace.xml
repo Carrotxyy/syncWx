@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1302ec60-dfbe-48e8-9aa4-347d752f0bab" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/work_person.go" beforeDir="false" afterPath="$PROJECT_DIR$/controller/work_person.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/init.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/visitor.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/visitor.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/BaseRepository.go" beforeDir="false" afterPath="$PROJECT_DIR$/repository/BaseRepository.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +32,29 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../GOMod/db-interaction" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RunManager">
+    <configuration name="go build github.com/Carrotxyy/syncWx" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="syncWx" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/init.go" />
+      <package value="github.com/Carrotxyy/syncWx" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build github.com/Carrotxyy/syncWx" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
@@ -37,9 +63,25 @@
     <integration-enabled>true</integration-enabled>
   </component>
   <component name="WindowStateProjectService">
-    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1596158002342">
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1596182844217">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1596158002342" />
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1596182844217" />
+    <state width="1222" height="207" key="GridCell.Tab.0.bottom" timestamp="1596788216574">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1222" height="207" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1596788216574" />
+    <state width="1222" height="207" key="GridCell.Tab.0.center" timestamp="1596788216574">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1222" height="207" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1596788216574" />
+    <state width="1222" height="207" key="GridCell.Tab.0.left" timestamp="1596788216574">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1222" height="207" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1596788216574" />
+    <state width="1222" height="207" key="GridCell.Tab.0.right" timestamp="1596788216574">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1222" height="207" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1596788216574" />
   </component>
 </project>
