@@ -18,12 +18,12 @@ import github.com/Carrotxyy/syncWx
 	// 获取配置对象
 	config := syncWx.GetConfig()
 	// 配置参数
-	config.WxAddr = "http://xyz.szlimaiyun.cn"
+	config.WxAddr = "http://localhost"
 	config.DbType = "mysql"
-	config.DbUser = "root"
-	config.DbPassword = "123456"
+	config.DbUser = "user"
+	config.DbPassword = "password"
 	config.DbIP = "127.0.0.1"
-	config.DbName = "gin-vue"
+	config.DbName = "DBName"
 	config.TablePrefix = "go_"
 	// 创建任务
 	wxWork,err := Create(config)
